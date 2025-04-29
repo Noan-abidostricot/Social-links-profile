@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+
+  :root {
+    font-size: 14px;
+    font-family: 'Inter';
+    
+    --green-col: hsl(75, 94%, 57%);
+    --white-col: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+  
+  
+  body {
+    
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    10. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{
+    display : flex;
+    height : 100vh;
+    justify-content: center;
+    align-items: center; 
+    
+    background-color: var(--grey-900);
+    
+  }
+  .container{
+    
+    /* background-color: var(--grey-800); */
+    background-color: var(--grey-800);
+    width : 382px;
+    border-radius : 10px;
+
+
+  }
+  .name, .description, .social-media{
+    color :var(--white-col)
+  }
+  .location{
+    color : var(--green-col);
+  }
+
+  .social-media{
+    text-decoration: none;
+  }
+
+  .profile-picture {
+    width: 88px;
+    margin: 0 auto;
+    height : auto;
+    
+    padding-top: 42px;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+
+  .name{
+    text-align: center;
+    font-size : 24.5px;
+    margin-top : 24px;
+  }
+
+  .location{
+    text-align: center;
+    font-weight: 800;
+    margin-top : 4px;
+    font-size : .98rem
+  }
+  .description{
+    text-align: center;
+    margin-top : 24px;
+  }
+
+  .social-medias-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap : 16px;
+    font-weight : 800;
+    margin-top : 24px;
+    padding-bottom: 41px;
+    
+  }
+
+  .social-media{
+    background-color: var(--grey-700);
+    width : 301px;
+    text-align: center;
+    padding : 12px 0px;
+    border-radius: 9px;
+
+  }
